@@ -2,21 +2,46 @@
 <html lang="fr">
 
 <head>
-    <title>  </title>
+    <title> Acceuil ohmyFood! </title>
     <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Ohmyfood! Commander et créer votre propre menu">
+    <meta name="keywords" content="Commander, Menu, Restaurant,">
     <meta name="author" content="Ucuetis">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- normalisation et style CSS  -->
+    <link type="text/css" rel="stylesheet" href="./assets/sass/normalize.css">
+    <link type="text/css" rel="stylesheet" href="./assets/sass/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/img/logo/ohmyfood-favicon.png">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/f4ce23bcc8.js" crossorigin="anonymous"></script>
+    <!-- typo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- En-tête -->
-    <header>
-
+    <header class="header">
+        <!-- image du logo SVG -->
+        <img class="header__logo" src="./assets/img/logo/ohmyfood@2x.svg" alt="Logo ohmyfood">
+        <!-- ou seconde image du logo png -->
+        <img src="./assets/img/logo/ohmyfood.png" alt="Logo ohmyfood">
+        <!-- ou typo -->
+        <h1 class="header__logo">ohmyfood</h1>
     </header>
     <!-- Main -->
     <main>
+        <!-- Section search-box -->
+        <section class="location">
+            <i class="fas fa-map-marker-alt location__icon"></i>
+            <form action="exemple_action_page.php" method="post|get">
+                <input class="location__search" type="text" value="Paris, Belleville" placeholder="Votre ville">
+            </form>
+        </section>
+        
+
 
     </main>
     <!-- Pied de page -->
