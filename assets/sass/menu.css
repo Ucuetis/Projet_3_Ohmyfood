@@ -1,0 +1,100 @@
+h1 {
+  font-family: "Shrikhand";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  color: #101010;
+}
+
+h2 {
+  font-family: "Shrikhand";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 41px;
+  color: #101010;
+}
+
+h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+h5 {
+  font-family: "Shrikhand";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+h6 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.header {
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 10;
+}
+.header__logo {
+  margin: 0;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+}
+.footer__logo {
+  margin: 25px 22px;
+}
+.footer__ul {
+  list-style: none;
+  margin-top: 0;
+  -webkit-padding-start: 25px;
+          padding-inline-start: 25px;
+}
+.footer__li {
+  list-style: none;
+  margin-bottom: 11px;
+}
+.footer__link {
+  color: #F3F3F3;
+  text-decoration: none;
+}
+.footer__link:hover {
+  text-decoration: underline;
+}
+.footer__icon {
+  width: 11px;
+  height: 13px;
+  margin-right: 10px;
+}
+
+body, html {
+  margin: 0;
+  font-family: "Roboto";
+}/*# sourceMappingURL=menu.css.map */

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- normalisation et style CSS  -->
     <link type="text/css" rel="stylesheet" href="./assets/sass/normalize.css">
-    <link type="text/css" rel="stylesheet" href="./assets/sass/style.css">
+    <link type="text/css" rel="stylesheet" href="./assets/sass/main.css">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/logo/ohmyfood-favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/logo/ohmyfood-favicon-32x32.png">
@@ -27,16 +27,12 @@
 <body>
     <!-- En-tête -->
     <header class="header">
-        <!-- image du logo SVG -->
-        <img class="header__logo" src="./assets/img/logo/ohmyfood@2x.svg" alt="Logo ohmyfood">
-        <!-- ou seconde image du logo png -->
-        <img src="./assets/img/logo/ohmyfood.png" alt="Logo ohmyfood">
-        <!-- ou typo -->
+        <!-- ou typo du logo -->
         <h1 class="header__logo">ohmyfood</h1>
         <!-- Section search-box -->
-        <section class="header__location">
-            <i class="fas fa-map-marker-alt location__icon"></i>
-            <form action="exemple_action_page.php" method="post|get">
+        <section class="location">
+            <i class="location__icon fas fa-map-marker-alt"></i>
+            <form class="location__form" action="exemple_action_page.php" method="post|get">
                 <input class="location__search" type="text" value="Paris, Belleville" placeholder="Votre ville">
             </form>
         </section>
@@ -54,7 +50,7 @@
         </section>
         <!-- Section fonctionnement -->
         <section class="operating">
-            <h2 class="operating__title">Fonctionnement</h2>
+            <h3 class="operating__title">Fonctionnement</h3>
             <div class="operating__stage">
                 <i class="fas fa-mobile-alt operating__icon"></i>
                 <span class="operating__text">Choisissez un restaurant</span>
@@ -70,7 +66,7 @@
         </section>
         <!-- Section restaurants -->
         <section class="resort">
-            <h2 class="resort__title">Restaurants</h2>
+            <h3 class="resort__title">Restaurants</h3>
             <div class="cards">
                 <!-- Restaurant La palette du goût -->
                 <article class="card">
@@ -79,7 +75,7 @@
                     <span class="card__new">Nouveau</span>
                     <div class="card__bottom">
                       <div class="card__text">
-                        <h3 class="card__title">La palette du goût</h3>
+                        <h4 class="card__title">La palette du goût</h4>
                         <span class="card__subtitle">Ménilmontant</span>
                       </div>
                       <div class="menu__btn card__btn">
@@ -96,7 +92,7 @@
                     <span class="card__new">Nouveau</span>
                     <div class="card__bottom">
                       <div class="card__text">
-                        <h3 class="card__title">La note enchantée</h3>
+                        <h4 class="card__title">La note enchantée</h4>
                         <span class="card__subtitle">Charonne</span>
                       </div>
                       <div class="menu__btn card__btn">
@@ -113,7 +109,7 @@
                     <!-- <span class="card__new">Nouveau</span> -->
                     <div class="card__bottom">
                       <div class="card__text">
-                        <h3 class="card__title">À la française</h3>
+                        <h4 class="card__title">À la française</h4>
                         <span class="card__subtitle">Cité Rouge</span>
                       </div>
                       <div class="menu__btn card__btn">
@@ -130,7 +126,7 @@
                     <!-- <span class="card__new">Nouveau</span> -->
                     <div class="card__bottom">
                       <div class="card__text">
-                        <h3 class="card__title">Le délice des sens</h3>
+                        <h4 class="card__title">Le délice des sens</h4>
                         <span class="card__subtitle">Folie-Méricourt</span>
                       </div>
                       <div class="menu__btn card__btn">
@@ -146,16 +142,16 @@
     </main>
     <!-- Pied de page -->
     <footer class="footer">
-        <!-- Logo de pied de page -->
-        <span class="footer__logo">ohmyfood</span>
-        <!-- liste du pied de page -->
-        <ul>
-            <li class="footer__list"><a href="#"><i class="fas fa-utensils"></i> Proposer un restaurant</a></li>
-            <li class="footer__list"><a href="#"><i class="fas fa-hands-helping"></i> Devenir partenaire</a></li>
-            <li class="footer__list"><a href="#">Mentions légales</a></li>
-            <li class="footer__list"><a href="mailto:ohmyfood-contact@gmail.com">Contact</a></li>
-        </ul>
-    </footer>
+      <!-- Logo de pied de page -->
+      <h5 class="footer__logo">ohmyfood</h5>
+      <!-- liste du pied de page -->
+      <ul class="footer__ul">
+          <li class="footer__li"><a class="footer__link" href="#"><i class="footer__icon fas fa-utensils"></i> Proposer un restaurant</a></li>
+          <li class="footer__li"><a class="footer__link" href="#"><i class="footer__icon fas fa-hands-helping"></i> Devenir partenaire</a></li>
+          <li class="footer__li"><a class="footer__link" href="#">Mentions légales</a></li>
+          <li class="footer__li"><a class="footer__link" href="mailto:ohmyfood-contact@gmail.com">Contact</a></li>
+      </ul>
+  </footer>
 </body>
 
 </html>
