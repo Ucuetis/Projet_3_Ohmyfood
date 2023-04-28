@@ -9,13 +9,15 @@
     gap: 17px;
     background-color: #EAEAEA;
 
-    &__form {
+    &__search {
+        width: min-content;
+        text-align: center;
+        // border: 0;
         background-color: #EAEAEA;
     }
-    &__search {
-        text-align: center;
-    }
 }
-        // &__icon {
 
-        // }
+    // &__form {}
+ 
+    // &__icon {}
+
