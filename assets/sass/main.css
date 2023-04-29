@@ -61,7 +61,7 @@ h5 {
   justify-content: center;
   margin: 0;
   padding: 10px 0px;
-  background-color: #EAEAEA;
+  background-color: #D2D2D2;
 }
 .location__form {
   display: flex;
@@ -74,7 +74,7 @@ h5 {
 .location__input {
   text-align: center;
   border: 0;
-  background-color: #EAEAEA;
+  background-color: #D2D2D2;
 }
 
 .footer {
@@ -114,5 +114,66 @@ body, html {
 }
 
 img {
-  width: 500px;
+  width: 375px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0px;
+  gap: 16px;
+  background-color: #EAEAEA;
+}
+
+.operating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+.operating__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0px;
+  gap: 16px;
+  background-color: #FFFFFF;
+}
+.operating__title {
+  text-align: left;
+}
+.operating__stage {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 240px;
+  height: 72px;
+  border-radius: 20px;
+  gap: 16px;
+  padding-left: 26px;
+  background-color: #F6F6F6;
+}
+.operating__num {
+  position: absolute;
+  left: -12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  color: #FFFFFF;
+  background-color: #9356DC;
+  text-align: center;
+}
+.operating__icon {
+  color: #7E7E7E;
+}
+.operating__icon:hover {
+  color: #9356DC;
 }/*# sourceMappingURL=main.css.map */
