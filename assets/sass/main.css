@@ -58,19 +58,23 @@ h5 {
 
 .location {
   width: 100%;
+  justify-content: center;
+  margin: 0;
+  padding: 10px 0px;
+  background-color: #EAEAEA;
+}
+.location__form {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 10px 0px;
-  gap: 17px;
-  background-color: #EAEAEA;
-}
-.location__search {
-  width: -moz-min-content;
-  width: min-content;
   text-align: center;
+  padding-left: 16px;
+  gap: 8px;
+}
+.location__input {
+  text-align: center;
+  border: 0;
   background-color: #EAEAEA;
 }
 
