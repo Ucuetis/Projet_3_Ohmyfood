@@ -86,8 +86,13 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 15px 0px 15px;
-    background-color: $color-bg-box;
+    // padding: 20px 15px 0px 15px;
+    // background-color: $color-bg-box;
+
+    &__box {
+        padding: 20px 15px 0px 15px;
+        background-color: $color-bg-box;
+    }
 
     &__title {
         margin-right: auto;
