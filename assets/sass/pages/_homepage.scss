@@ -11,6 +11,13 @@ body, html {
     padding: 16px 0px;
     background-color: $color-bg;
 
+    &__slogan {
+        text-align: center;
+    }
+    
+    &__motto {
+        text-align: center;
+    }
 }
 
 .operating {
@@ -40,17 +47,12 @@ body, html {
         display: flex;
         flex-direction: row;
         align-items: center;
-        // width: 322px;
         width: 240px;
         height: 72px;
         border-radius: 20px;
         gap: 16px;
         padding-left: 26px;
         background-color: $color-bg-box;
-
-        // &:hover {
-        //     color: $color-primary
-        // }
     }
 
     &__num {

@@ -63,15 +63,23 @@ p {
     line-height: 21px;
 }
 
-// a {
-
-// }
-
-.info__slogan {
-    text-align: center;
+// faire passer les lien en :hover en couleur complementaire 
+a {
+    &:link {
+        text-decoration: none;
+      }
+      
+      &:visited {
+        text-decoration: none;
+      }
+      
+      &:hover {
+        text-decoration: underline;
+      }
+      
+      &:active {
+        text-decoration: none;
+      }
 }
 
-.info__motto {
-    text-align: center;
-}
 

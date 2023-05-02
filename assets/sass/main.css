@@ -50,12 +50,17 @@ p {
   line-height: 21px;
 }
 
-.info__slogan {
-  text-align: center;
+a:link {
+  text-decoration: none;
 }
-
-.info__motto {
-  text-align: center;
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: none;
 }
 
 .header {
@@ -135,6 +140,12 @@ body, html {
   align-items: center;
   padding: 16px 0px;
   background-color: #EAEAEA;
+}
+.info__slogan {
+  text-align: center;
+}
+.info__motto {
+  text-align: center;
 }
 
 .operating {

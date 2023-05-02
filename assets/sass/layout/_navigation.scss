@@ -1,11 +1,18 @@
-// fleche de navigation pour les pages de menus
-// nav {
-
-// }
-
-// nav__arrow
-
-// .header__nav {
-
-// }
-
+fleche de navigation pour les pages de menus
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.header__nav {
+    position: absolute;
+    top: 17px;
+    left: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+}

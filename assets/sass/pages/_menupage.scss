@@ -2,7 +2,74 @@ body, html {
     margin: 0;
     font-family: 'Roboto';
 }
-// non définitive
-img {
-    width: 375px;
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+
+}
+
+.table {
+    width: 100%;
+
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: auto;
+    padding: 0px 15px 25px 15px;
+
+    &__title {
+        
+    }
+}
+
+.dishes {
+
+    &__title {
+        border-bottom: 4px solid $color-tertiary;
+    }
+    &__list {
+
+    }
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 350px;
+    height: 70px;
+    padding: 0px;
+    border-radius: 15px;
+    background: $color-undenary;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+
+    // gap: 15px;
+    // isolation: isolate;
+
+
+
+    &__text {
+
+    }
+    &__price {
+
+    }
+    &__check {
+
+    }
 }
