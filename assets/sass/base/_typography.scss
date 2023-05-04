@@ -35,6 +35,7 @@ h4 {
     font-size: 18px;
     line-height: 21px;
     color: $color-nonary;
+    margin: 0;
 }
 
 // logo footer
@@ -47,23 +48,24 @@ h5 {
     color: $color-undenary;
 }
 
-// h6 {
-//     font-family: '';
-//     font-style: ;
-//     font-weight: ;
-//     font-size: ;
-//     line-height: ;
-//     color: $color-nonary;
-// }
-
-p {
-    font-family: Roboto;
-    font-size: 18px;
+h6 {
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 300;
-    line-height: 21px;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
 }
 
-// faire passer les lien en :hover en couleur complementaire 
+p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: $color-nonary;
+}
+
 a {
     &:link {
         text-decoration: none;

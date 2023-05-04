@@ -32,6 +32,7 @@ h4 {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+  margin: 0;
 }
 
 h5 {
@@ -43,11 +44,22 @@ h5 {
   color: #FFFFFF;
 }
 
-p {
-  font-family: Roboto;
-  font-size: 18px;
+h6 {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 300;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
 }
 
 a:link {
@@ -68,7 +80,6 @@ a:active {
   margin: 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   position: relative;
-  z-index: 10;
 }
 .header__logo {
   margin: 0;
@@ -98,8 +109,15 @@ a:active {
 }
 
 .footer {
+  position: absolute;
+  top: 100% vmax;
+  left: 0px;
+  right: 0px;
   display: flex;
   flex-direction: column;
+  max-width: 1280px;
+  margin: auto;
+  padding: 16px;
   background-color: #353535;
 }
 .footer__logo {
