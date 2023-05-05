@@ -8,7 +8,10 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: 1440px;
     padding: 16px 0px;
+    margin: auto;
     background-color: $color-bg;
 
     &__slogan {
@@ -25,7 +28,8 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0px 15px 20px 15px;
+    width: 100%;
+    padding: 0px 0px 20px 0px;
     background-color: $color-undenary;
 
     &__box {
@@ -33,13 +37,31 @@ body, html {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 16px 0px;
+        width: 100%;
+        max-width: 767px;
+        background-color: $color-undenary;
+        gap: 16px;  
+    }
+
+    &__step {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 767px;
+        padding: 20px 0px;
         gap: 16px;
         background-color: $color-undenary;
-    }
+
+        @media screen and (min-width: $mobile) {
+                            flex-direction: row;
+                         }
+        }
 
     &__title {
         margin-right: auto;
+        padding-left: 15px;
     }
 
     &__stage {
@@ -81,25 +103,45 @@ body, html {
 .resort {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    max-width: 1024px;
     width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    background-color: $color-bg-box;
+
 
     &__box {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        padding: 20px 15px ;
+        max-width: 769px;
         background-color: $color-bg-box;
     }
 
     &__title {
-        margin-right: auto;
+        width: 100%;
+        min-width: 290px;
+        max-width: 1024px;
+        margin: 25px 15px;
+        padding-left: 30px;
     }
 }
 
 .cards {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1024px;
+    padding: 15px;
     gap: 20px;
     background-color: $color-bg-box;
 }
@@ -130,7 +172,7 @@ body, html {
         width: 320px;
         max-width: 100%;
         height: 231px;
-        width: 346px;
+        width: 331px;
         border: 0 solid transparent;
         border-radius: 15px 15px 0 0;
         box-shadow: none;

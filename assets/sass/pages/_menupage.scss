@@ -1,29 +1,41 @@
 body, html {
     margin: 0;
     font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    position: static;
+    // position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 img {
     width: 100%;
-    max-width: 100%;
+    max-width: 1440px;
     max-height: 512px;
     object-fit: cover;
 }
 
 .main {
-    position: absolute;
-    top: 300px;
-    left: 0px;
+    // position: absolute;
+    // top: 276px;
+    // left: 0px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     width: 100%;
+    max-width: 769px;
     
 }
 
@@ -104,10 +116,13 @@ img {
         align-content: center;
         justify-content: flex-start;
         margin: 0;
+        gap: 8px;
     }
 
     &__tilte {
         margin: 0;
+        padding-bottom: 16px;
+        font-weight: bold;
     }
 
     &__comment {

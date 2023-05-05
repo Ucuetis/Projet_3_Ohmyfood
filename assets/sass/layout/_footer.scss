@@ -1,14 +1,13 @@
 .footer {
-    position: absolute;
-    top: 0px;
-    bottom: percentage($number: 100%);
-    left: 0px;
-    right: 0px;
+    // position: absolute;
+    // top: 1754px;
+    // left: 0px;
+    // right: 0px;
     display: flex;
     flex-direction: column;
-    max-width: 1280px;
+    width: 100%;
+    max-width: 1440px;
     margin: auto;
-    padding: 16px;
     background-color: $color-septenary;
 
     &__logo {
