@@ -10,19 +10,44 @@
     margin: auto;
     background-color: $color-septenary;
 
+    @media screen and (min-width: $tablette) {
+        flex-direction: row-reverse;
+        padding-top: 38px;
+        gap: 16px;
+    }
+
     &__logo {
         margin: 25px 22px;
+        @media screen and (min-width: $tablette) {
+            padding-right: 25px;
+        }
+        
     }
 
     &__ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
         list-style: none;
         margin-top: 0;
         padding-inline-start: 25px;
+
+        @media screen and (min-width: $tablette) {
+            flex-direction: row;
+            gap: 16px;
+            align-items: center;
+            margin-bottom: 2px;
+            padding-inline-start: 0px;
+        }
     }
 
     &__li {
         list-style: none;
         margin-bottom: 11px;
+
+        @media screen and (min-width: $tablette) {
+            margin-bottom: 0px;
+        }
     }
 
     &__link {

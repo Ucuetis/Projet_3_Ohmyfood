@@ -1,12 +1,10 @@
 body, html {
-    margin: 0;
     font-family: 'Roboto';
 }
 
 .info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 1440px;
@@ -20,48 +18,43 @@ body, html {
     
     &__motto {
         text-align: center;
+        padding: 0px 15px;
     }
 }
 
 .operating {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    max-width: 1440px;
+    margin: auto;
     padding: 0px 0px 20px 0px;
     background-color: $color-undenary;
 
     &__box {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         width: 100%;
-        max-width: 767px;
-        background-color: $color-undenary;
+        max-width: 1024px;
         gap: 16px;  
+    }
+
+    &__title {
+        width: calc(100% - 30px);
+        padding-left: 15px;
     }
 
     &__step {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        max-width: 767px;
-        padding: 20px 0px;
+        max-width: 1012px;
+        padding: 20px 0px 20px 12px;
         gap: 16px;
-        background-color: $color-undenary;
 
-        @media screen and (min-width: $mobile) {
-                            flex-direction: row;
-                         }
+        @media screen and (min-width: $laptop) {
+            flex-direction: row;
         }
-
-    &__title {
-        margin-right: auto;
-        padding-left: 15px;
     }
 
     &__stage {
@@ -75,6 +68,12 @@ body, html {
         gap: 16px;
         padding-left: 26px;
         background-color: $color-bg-box;
+
+        @media screen and (min-width: $desktop) {
+            width: 322px;
+            height: 72px;
+            gap: 25px;
+        }
     }
 
     &__num {
@@ -90,27 +89,18 @@ body, html {
         background-color: $color-primary;
         text-align: center;
     }
-
+// animation 1 > 2 > 3 > 0 
     &__icon {
         color: $color-icon-grey;
             &:hover {
                 color: $color-primary;
         }
     }
-
 }
 
 .resort {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 1024px;
+    max-width: 1440px;
     margin: auto;
-    background-color: $color-bg-box;
-
 
     &__box {
         display: flex;
@@ -118,17 +108,20 @@ body, html {
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        max-width: 769px;
         background-color: $color-bg-box;
     }
 
     &__title {
-        width: 100%;
-        min-width: 290px;
+        display: flex;
+        align-items: center;
+        width: calc(100% - 30px);
         max-width: 1024px;
-        margin: 25px 15px;
-        padding-left: 30px;
+        padding-left: 15px;
+        margin: 20px 0px;
+
+        @media screen and (min-width: $desktop) {
+            padding-left: 45px;
+         }
     }
 }
 
@@ -137,13 +130,18 @@ body, html {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-width: 320px;
     max-width: 1024px;
-    padding: 15px;
-    gap: 20px;
-    background-color: $color-bg-box;
+    margin-bottom: 30px;
+    gap: 30px;
+
+    @media screen and (min-width: $tablette) {
+        padding: 0px 15px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: 1440px;;
+    }
+
 }
 
 .card {
@@ -152,7 +150,6 @@ body, html {
     flex-direction: column;
     border-radius: 15px;
     background-color: $color-undenary;
-
 
     &__new {
         position: absolute;
@@ -169,14 +166,22 @@ body, html {
     }
 
     &__img {
-        width: 320px;
-        max-width: 100%;
         height: 231px;
-        width: 331px;
+        width: 346px;
         border: 0 solid transparent;
         border-radius: 15px 15px 0 0;
         box-shadow: none;
         object-fit: cover;
+
+        @media screen and (max-width: $small) {
+            width: 320px;
+            height: 231px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: 498px;
+            height: 231px;
+        }
     }
 
     &__bottom {

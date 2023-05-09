@@ -1,21 +1,21 @@
 .location {
-    width: 100%;
+    display: flex;
     justify-content: center;
-    margin: 0;
+    align-items: center;
     padding: 10px 0px;
     background-color: $color-location;
 
     &__form {
-        display: flex;
-        flex-direction: row;
+        display: inline-flex;
+        margin: auto;
         justify-content: center;
         align-items: center;
-        padding-left: 16px;
         gap: 8px;
     }
-    // Voir pour ajouter l'icon dans l'input pour mieux centrer le champ de recherche.
+
     &__input {
-        text-align: center;
+        width: 60%;
+        text-align: right;
         border: 0;
         background-color: $color-location;
     }

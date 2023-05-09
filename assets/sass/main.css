@@ -1,3 +1,4 @@
+/*-- Couleurs --*/
 /*-- breakpoints --*/
 h1 {
   font-family: "Shrikhand";
@@ -80,15 +81,19 @@ a:active {
   text-decoration: none;
 }
 
+.card__title {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
 .header {
-  padding: 0;
   margin: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   max-width: 1440px;
 }
@@ -99,22 +104,22 @@ a:active {
 }
 
 .location {
-  width: 100%;
+  display: flex;
   justify-content: center;
-  margin: 0;
+  align-items: center;
   padding: 10px 0px;
   background-color: #D2D2D2;
 }
 .location__form {
-  display: flex;
-  flex-direction: row;
+  display: inline-flex;
+  margin: auto;
   justify-content: center;
   align-items: center;
-  padding-left: 16px;
   gap: 8px;
 }
 .location__input {
-  text-align: center;
+  width: 60%;
+  text-align: right;
   border: 0;
   background-color: #D2D2D2;
 }
@@ -127,18 +132,48 @@ a:active {
   margin: auto;
   background-color: #353535;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row-reverse;
+    padding-top: 38px;
+    gap: 16px;
+  }
+}
 .footer__logo {
   margin: 25px 22px;
 }
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    padding-right: 25px;
+  }
+}
 .footer__ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   list-style: none;
   margin-top: 0;
   -webkit-padding-start: 25px;
           padding-inline-start: 25px;
 }
+@media screen and (min-width: 768px) {
+  .footer__ul {
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 2px;
+    -webkit-padding-start: 0px;
+            padding-inline-start: 0px;
+  }
+}
 .footer__li {
   list-style: none;
   margin-bottom: 11px;
+}
+@media screen and (min-width: 768px) {
+  .footer__li {
+    margin-bottom: 0px;
+  }
 }
 .footer__link {
   color: #F3F3F3;
@@ -154,14 +189,12 @@ a:active {
 }
 
 body, html {
-  margin: 0;
   font-family: "Roboto";
 }
 
 .info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 100%;
   max-width: 1440px;
@@ -174,46 +207,41 @@ body, html {
 }
 .info__motto {
   text-align: center;
+  padding: 0px 15px;
 }
 
 .operating {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  max-width: 1440px;
+  margin: auto;
   padding: 0px 0px 20px 0px;
   background-color: #FFFFFF;
 }
 .operating__box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 767px;
-  background-color: #FFFFFF;
+  max-width: 1024px;
   gap: 16px;
+}
+.operating__title {
+  width: calc(100% - 30px);
+  padding-left: 15px;
 }
 .operating__step {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 767px;
-  padding: 20px 0px;
+  max-width: 1012px;
+  padding: 20px 0px 20px 12px;
   gap: 16px;
-  background-color: #FFFFFF;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1024px) {
   .operating__step {
     flex-direction: row;
   }
-}
-.operating__title {
-  margin-right: auto;
-  padding-left: 15px;
 }
 .operating__stage {
   position: relative;
@@ -226,6 +254,13 @@ body, html {
   gap: 16px;
   padding-left: 26px;
   background-color: #F6F6F6;
+}
+@media screen and (min-width: 1440px) {
+  .operating__stage {
+    width: 322px;
+    height: 72px;
+    gap: 25px;
+  }
 }
 .operating__num {
   position: absolute;
@@ -248,15 +283,8 @@ body, html {
 }
 
 .resort {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 1024px;
+  max-width: 1440px;
   margin: auto;
-  background-color: #F6F6F6;
 }
 .resort__box {
   display: flex;
@@ -264,16 +292,20 @@ body, html {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  max-width: 769px;
   background-color: #F6F6F6;
 }
 .resort__title {
-  width: 100%;
-  min-width: 290px;
+  display: flex;
+  align-items: center;
+  width: calc(100% - 30px);
   max-width: 1024px;
-  margin: 25px 15px;
-  padding-left: 30px;
+  padding-left: 15px;
+  margin: 20px 0px;
+}
+@media screen and (min-width: 1440px) {
+  .resort__title {
+    padding-left: 45px;
+  }
 }
 
 .cards {
@@ -281,13 +313,19 @@ body, html {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  min-width: 320px;
   max-width: 1024px;
-  padding: 15px;
-  gap: 20px;
-  background-color: #F6F6F6;
+  margin-bottom: 30px;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .cards {
+    padding: 0px 15px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .cards {
+    max-width: 1440px;
+  }
 }
 
 .card {
@@ -311,15 +349,25 @@ body, html {
   color: #008766;
 }
 .card__img {
-  width: 320px;
-  max-width: 100%;
   height: 231px;
-  width: 331px;
+  width: 346px;
   border: 0 solid transparent;
   border-radius: 15px 15px 0 0;
   box-shadow: none;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (max-width: 374px) {
+  .card__img {
+    width: 320px;
+    height: 231px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .card__img {
+    width: 498px;
+    height: 231px;
+  }
 }
 .card__bottom {
   height: 70px;
