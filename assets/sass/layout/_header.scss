@@ -1,6 +1,5 @@
 .header {
     margin: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     position: relative;
     width: 100%;
     max-width: 1440px;
@@ -9,5 +8,6 @@
       margin: 0;
       padding: 10px 0 0 0;
       text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     }
 }
