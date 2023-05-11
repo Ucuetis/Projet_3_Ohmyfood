@@ -1,7 +1,3 @@
-body, html {
-    font-family: 'Roboto';
-}
-
 .info {
     display: flex;
     flex-direction: column;
@@ -14,11 +10,13 @@ body, html {
 
     &__slogan {
         text-align: center;
+        margin-bottom: 18px;
     }
     
     &__motto {
         text-align: center;
-        padding: 0px 15px;
+        padding: 0px 15px ;
+        margin-bottom: 18px;
     }
 }
 
@@ -28,7 +26,7 @@ body, html {
     align-items: center;
     max-width: 1440px;
     margin: auto;
-    padding: 0px 0px 20px 0px;
+    padding: 30px 0px 20px 0px;
     background-color: $color-undenary;
 
     &__box {
@@ -118,7 +116,7 @@ body, html {
         width: calc(100% - 30px);
         max-width: 1024px;
         padding-left: 15px;
-        margin: 20px 0px;
+        margin: 30px 0px;
 
         @media screen and (min-width: $desktop) {
             padding-left: 45px;
@@ -189,20 +187,23 @@ body, html {
     &__bottom {
         height: 70px;
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
         padding: 8px;
     }
 
     &__text {
-        padding-bottom: 15px;
+        display: flex;
+        flex-direction: column;
     }
 
     &__title {
-        margin: 15px 0px;
+        padding: 15px 0px;
     }
 
     &__subtitle {
-        margin: 0px 0px 15px 0px;
+        padding: 0px 0px 15px 0px;
     }
 
     &__btn {

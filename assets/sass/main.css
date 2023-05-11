@@ -1,71 +1,8 @@
 /*-- Couleurs --*/
 /*-- breakpoints --*/
-h1 {
-  font-family: "Shrikhand";
-  font-style: italic;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 44px;
-  color: #101010;
-}
-
-h2 {
-  font-family: "Shrikhand";
-  font-style: italic;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 41px;
-  color: #101010;
-}
-
-h3 {
+body, html {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  color: #000000;
-}
-
-h4 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  color: #000000;
-  margin: 0;
-}
-
-.item__title {
-  font-weight: bold;
-}
-
-h5 {
-  font-family: "Shrikhand";
-  font-style: italic;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
-  color: #FFFFFF;
-}
-
-h6 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
-  text-transform: uppercase;
-}
-
-p {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 18px;
-  color: #000000;
 }
 
 a:link {
@@ -81,18 +18,130 @@ a:active {
   text-decoration: none;
 }
 
-.card__title {
-  font-family: Roboto;
+.header__logo {
+  font-family: "Shrikhand";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  color: #101010;
+}
+
+.footer__logo {
+  font-family: "Shrikhand";
+  font-style: italic;
+  font-weight: 400;
   font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.location__input {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #353535;
+}
+
+.info__slogan {
   font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+@media screen and (min-width: 1440px) {
+  .info__slogan {
+    font-size: 40px;
+    line-height: 47px;
+  }
+}
+
+.info__motto {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.button__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.operating__title,
+.resort__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.operating__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.menu__name {
+  font-family: "Shrikhand";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 41px;
+  color: #101010;
+}
+
+.card__new {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 18px;
   line-height: 21px;
-  letter-spacing: 0em;
-  text-align: left;
+  color: #000000;
+}
+
+.card__subtitle {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.item__title {
+  font-weight: bold;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.item__comment {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.dishes__title {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
 }
 
 .header {
-  margin: auto;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
   width: 100%;
   max-width: 1440px;
 }
@@ -188,10 +237,6 @@ a:active {
   margin-right: 10px;
 }
 
-body, html {
-  font-family: "Roboto";
-}
-
 .info {
   display: flex;
   flex-direction: column;
@@ -204,10 +249,12 @@ body, html {
 }
 .info__slogan {
   text-align: center;
+  margin-bottom: 18px;
 }
 .info__motto {
   text-align: center;
   padding: 0px 15px;
+  margin-bottom: 18px;
 }
 
 .operating {
@@ -216,7 +263,7 @@ body, html {
   align-items: center;
   max-width: 1440px;
   margin: auto;
-  padding: 0px 0px 20px 0px;
+  padding: 30px 0px 20px 0px;
   background-color: #FFFFFF;
 }
 .operating__box {
@@ -301,7 +348,7 @@ body, html {
   width: calc(100% - 30px);
   max-width: 1024px;
   padding-left: 15px;
-  margin: 20px 0px;
+  margin: 30px 0px;
 }
 @media screen and (min-width: 1440px) {
   .resort__title {
@@ -374,17 +421,20 @@ body, html {
 .card__bottom {
   height: 70px;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   padding: 8px;
 }
 .card__text {
-  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
 }
 .card__title {
-  margin: 15px 0px;
+  padding: 15px 0px;
 }
 .card__subtitle {
-  margin: 0px 0px 15px 0px;
+  padding: 0px 0px 15px 0px;
 }
 .card__btn {
   display: flex;

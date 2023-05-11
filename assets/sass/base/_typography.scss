@@ -1,98 +1,140 @@
-// logo header
-h1 {
-    font-family: 'Shrikhand';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 44px;
-    color: $color-denary;
-}
-
-// restaurant name
-h2 {
-    font-family: 'Shrikhand';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 41px;
-    color: $color-denary;
-}
-
-// fonctionnement, restaurants
-h3 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    color: $color-nonary;
-}
-
-h4 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    color: $color-nonary;
-    margin: 0;
-}
-
-.item__title {
-  font-weight: bold;
-}
-
-// logo footer
-h5 {
-    font-family: 'Shrikhand';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
-    color: $color-undenary;
-}
-
-h6 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    text-transform: uppercase;
-}
-
-p {
+body, html {
   font-family: 'Roboto';
   font-style: normal;
+}
+
+a {
+  &:link {
+    text-decoration: none;
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.header__logo {
+  font-family: 'Shrikhand';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  color: $color-denary;
+}
+
+.footer__logo {
+  font-family: 'Shrikhand';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: $color-undenary;
+}
+
+.location__input {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: $color-septenary;
+}
+
+.info__slogan {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: $color-nonary;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 40px;
+    line-height: 47px;
+  }
+}
+
+.info__motto {
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
   color: $color-nonary;
 }
 
-a {
-    &:link {
-        text-decoration: none;
-      }
-      
-      &:visited {
-        text-decoration: none;
-      }
-      
-      &:hover {
-        text-decoration: underline;
-      }
-      
-      &:active {
-        text-decoration: none;
-      }
+.button__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: $color-undenary;
+}
+
+.operating__title,
+.resort__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: $color-nonary;
+}
+
+.operating__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: $color-nonary;
+}
+
+.menu__name {
+  font-family: 'Shrikhand';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 41px;
+  color: $color-denary;
+}
+
+.card__new {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
 }
 
 .card__title {
-  font-family: Roboto;
-  font-size: 18px;
   font-weight: 700;
+  font-size: 18px;
   line-height: 21px;
-  letter-spacing: 0em;
-  text-align: left;
+  color: $color-nonary;
+}
+
+.card__subtitle {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 20px;
+  color: $color-nonary;
+}
+
+.item__title {
+  font-weight: bold;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: $color-nonary;
+}
+
+.item__comment {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 20px;
+  color: $color-nonary;
+}
+
+.dishes__title {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
 }
