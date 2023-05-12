@@ -28,3 +28,18 @@
         transform: matrix(1, 0, 0, 1, 0, 0);
     }
 }
+.card__like {
+    display: none;
+    &:hover {
+        display: inline-block;
+        color: $color-denary;
+        background-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    }
+    &--noBg {
+        display: inline-block;
+        color: $color-denary;
+        &:hover {
+            display: none;
+        }
+    }
+}

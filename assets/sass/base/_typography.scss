@@ -13,7 +13,7 @@ a {
   }
 
   &:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   &:active {
@@ -118,8 +118,9 @@ a {
 }
 
 .item__title {
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: bold;
-  font-weight: 500;
   font-size: 18px;
   line-height: 21px;
   color: $color-nonary;
@@ -133,8 +134,11 @@ a {
 }
 
 .dishes__title {
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
+  color: $color-nonary;
 }
