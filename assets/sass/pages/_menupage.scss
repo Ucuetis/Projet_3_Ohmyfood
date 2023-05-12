@@ -74,10 +74,20 @@ img {
 }
 
 .dishes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 634px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
 
     &__title {
         position: relative;
         display: flex;
+        align-self: flex-start;
         padding: 30px 0px 0px 0px;
         
         &:after {
@@ -99,6 +109,7 @@ img {
     }
     &__order {
         display: flex;
+        justify-content: space-between;
         justify-content: center;
         align-items: center;
         padding: 20px 0px;
@@ -110,7 +121,7 @@ img {
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: 100%;
+    max-width: 604px;
     height: 69px;
     margin: 16px 0px;
     padding: 15px;
