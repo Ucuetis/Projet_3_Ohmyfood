@@ -74,10 +74,14 @@ img {
 
     &__title {
         position: relative;
+        display: flex;
+
         font-weight: 400;
+        padding: 30px 0px 0px 0px;
         
         &:after {
             position: absolute;
+            display: flex;
             left: 0%;
             bottom: -10px;
             content: '';
@@ -87,7 +91,16 @@ img {
         }
     }
     &__list {
+        display: flex;
+        flex-direction: column;
         width: 100%;
+        padding: 20px 0px 0px 0px;
+    }
+    &__order {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px;
     }
 }
 
