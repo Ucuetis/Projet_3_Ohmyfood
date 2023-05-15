@@ -1,29 +1,15 @@
-// Mixin pour les breakpoints en fonction des tailles d'écrans
-
-/*-- breakpoints --*/
-
-// $display: (
-// 
-// 'mobile': 767px,
-// 'pad': 1023px,
-// 'laptop': 1223px,
-// 'desktop': 1439px,
-// )
-
-// @mixin small($breakpoint) {
-//     @each $breakpoints, $size in $display {
-//         @if $breakpoint==$breakpoints {
-//             @media screen and (min-width: $size) {
-//                 @content;
-//             }
-//         }
-//     }
-// }
-// Exemple
-// .main {
-//     background-color: red;
-
-//     @include mobile {
-//         background-color: blue;
-//     }
-// }
+@mixin gradient-button($width) {
+    width: $width;
+    height: 50px;
+    border: 0 solid transparent;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    &:hover {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+        border-radius: 25px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+}
