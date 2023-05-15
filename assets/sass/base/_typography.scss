@@ -4,20 +4,9 @@ body, html {
 }
 
 a {
-  &:link {
+  &:link, &:visited, &:hover, &:active{
     text-decoration: none;
-  }
-
-  &:visited {
-    text-decoration: none;
-  }
-
-  &:hover {
-    text-decoration: none;
-  }
-
-  &:active {
-    text-decoration: none;
+    color: none;
   }
 }
 

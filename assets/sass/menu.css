@@ -6,17 +6,9 @@ body, html {
   font-style: normal;
 }
 
-a:link {
+a:link, a:visited, a:hover, a:active {
   text-decoration: none;
-}
-a:visited {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-}
-a:active {
-  text-decoration: none;
+  color: none;
 }
 
 .header__logo {
@@ -423,13 +415,34 @@ img {
   align-content: center;
   justify-content: flex-start;
   gap: 12px;
+  width: calc(100% - 40px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.item__text:hover {
+  overflow: visible;
 }
 .item__tilte {
   padding-bottom: 16px;
   font-weight: bold;
+  width: calc(100% - 40px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.item__tilte:hover {
+  overflow: visible;
 }
 .item__comment {
   padding-bottom: 0px;
+  width: calc(100% - 40px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.item__comment:hover {
+  overflow: visible;
 }
 .item__price {
   position: absolute;

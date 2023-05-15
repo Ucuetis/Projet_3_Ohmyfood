@@ -133,15 +133,36 @@ img {
         align-content: center;
         justify-content: flex-start;
         gap: 12px;
+        width: calc(100% - 40px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &:hover {
+            overflow: visible;
+        }
     }
 
     &__tilte {
         padding-bottom: 16px;
         font-weight: bold;
+        width: calc(100% - 40px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &:hover {
+            overflow: visible;
+        }
     }
 
     &__comment {
         padding-bottom: 0px;
+        width: calc(100% - 40px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &:hover {
+            overflow: visible;
+        }
     }
 
     &__price {
