@@ -8,7 +8,6 @@ body, html {
 }
 
 .container {
-    // position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -36,7 +35,6 @@ img {
 }
 
 .menu {
-
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -54,7 +52,6 @@ img {
         width: auto;
         justify-content: space-between;
         padding: 16px 0;
-
     }
 
     &__like {      

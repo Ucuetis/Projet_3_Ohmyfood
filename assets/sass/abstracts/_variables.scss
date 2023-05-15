@@ -19,13 +19,12 @@ $color-bg-menu: #F7F7F7;
 $color-location: #D2D2D2;
 $color-bg: #EAEAEA;
 
-// $color-arrow: #353535;
-
 /*-- breakpoints --*/
 $tablette:768px;
 $laptop: 1024px;
 $desktop: 1440px;
 
-/*-- largeur des boutons pour la mixin --*/
+/*-- largeur des boutons gradients pour la mixin --*/
 $width-info__button: 218px;
 $width-dishes__button: 186px;
+$height-button: 50px;

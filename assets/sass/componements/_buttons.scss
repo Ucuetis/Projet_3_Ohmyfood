@@ -1,8 +1,8 @@
 .info__button  {
-    @include gradient-button($width: $width-info__button)
+    @include gradient-button($width-info__button, $height-button);
 }
 .dishes__button {  
-    @include gradient-button($width: $width-dishes__button)
+    @include gradient-button($width-dishes__button, $height-button);
 }
 .card__like {
     display: none;
