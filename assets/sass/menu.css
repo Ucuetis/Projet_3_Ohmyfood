@@ -182,6 +182,7 @@ a:link, a:visited, a:hover, a:active {
 .heart__like {
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 
 .heart__icon {
@@ -193,21 +194,25 @@ a:link, a:visited, a:hover, a:active {
 .heart__icon--nobg {
   position: absolute;
   color: #101010;
+  opacity: 1;
+  z-index: 2;
+}
+.heart__icon--nobg:hover {
+  opacity: 0;
+  z-index: 1;
 }
 .heart__icon--bg {
   position: absolute;
   opacity: 0;
+  z-index: 1;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
-  transition: all;
 }
-.heart__icon:hover .heart__icon--bg {
-  opacity: 0;
-}
-.heart__icon:hover .heart__icon--nobg {
+.heart__icon--bg:hover {
   opacity: 1;
+  z-index: 2;
 }
 
 .header {

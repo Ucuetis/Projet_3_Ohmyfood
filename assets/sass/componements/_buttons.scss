@@ -9,6 +9,7 @@
 .heart__like {
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
 .heart__icon {
@@ -20,22 +21,28 @@
     &--nobg {
         position: absolute;
         color: $color-denary;
+        opacity: 1;
+        z-index: 2;
+            &:hover {
+                opacity: 0;
+                z-index: 1;
+            }
     }
 
     &--bg {
         position: absolute;
         opacity: 0;
+        z-index: 1;
         background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
         background-clip: text;
         color: transparent;
-        transition: all;
+            &:hover {
+            opacity: 1;
+            z-index: 2;
+        }
     }
 
-    &:hover &--bg{
-        opacity: 0;
-    }
+    
 
-    &:hover &--nobg{
-        opacity: 1;
-    }
+
 }
