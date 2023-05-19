@@ -6,34 +6,36 @@
 }
 
 /*-- Coeur --*/
-.card__btn {
+.heart__like {
+    display: flex;
+    justify-content: center;
+}
+
+.heart__icon {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-right: 16px;
+    cursor: pointer;
 
-    &--nobg{
+    &--nobg {
         position: absolute;
         color: $color-denary;
     }
 
-    &--bg{
+    &--bg {
         position: absolute;
         opacity: 0;
         background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
         background-clip: text;
-        -webkit-background-clip: text;
         color: transparent;
-        transition: all 400ms;
+        transition: all;
     }
 
     &:hover &--bg{
-        opacity: 1;
-
-    }
-    
-    &:hover &--nobg{
         opacity: 0;
+    }
+
+    &:hover &--nobg{
+        opacity: 1;
     }
 }

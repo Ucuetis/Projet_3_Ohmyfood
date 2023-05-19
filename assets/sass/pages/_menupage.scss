@@ -63,8 +63,10 @@ img {
     &__btn {
         display: flex;
         justify-content: center;
-        height: 32px;
-        width: 32px;
+        width: 22px;
+        height: 21px;
+        padding: 0;
+        margin: 0;
         background-color: $color-bg-menu;
         border: transparent 0px solid;
     }

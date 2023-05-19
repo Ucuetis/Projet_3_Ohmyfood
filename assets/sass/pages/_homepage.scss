@@ -211,9 +211,11 @@
     &__btn {
         display: flex;
         justify-content: center;
-        height: 32px;
-        width: 32px;
+        width: 22px;
+        height: 21px;
         background-color: transparent;
         border: transparent 0px solid;
+        padding: 0;
+        margin: 0;
     }
 }

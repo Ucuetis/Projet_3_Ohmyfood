@@ -1,3 +1,11 @@
+@keyframes heartfull {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /*-- Couleurs --*/
 /*-- breakpoints --*/
 /*-- largeur des boutons gradients pour la mixin --*/
@@ -134,6 +142,10 @@ a:link, a:visited, a:hover, a:active {
   color: #000000;
 }
 
+.fa-heart {
+  font-size: 21px;
+}
+
 .info__button {
   width: 218px;
   height: 50px;
@@ -167,31 +179,35 @@ a:link, a:visited, a:hover, a:active {
 }
 
 /*-- Coeur --*/
-.card__btn {
+.heart__like {
+  display: flex;
+  justify-content: center;
+}
+
+.heart__icon {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-right: 16px;
+  cursor: pointer;
 }
-.card__btn--nobg {
+.heart__icon--nobg {
   position: absolute;
   color: #101010;
 }
-.card__btn--bg {
+.heart__icon--bg {
   position: absolute;
   opacity: 0;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  background-clip: text;
   -webkit-background-clip: text;
+          background-clip: text;
   color: transparent;
-  transition: all 400ms;
+  transition: all;
 }
-.card__btn:hover .card__btn--bg {
-  opacity: 1;
-}
-.card__btn:hover .card__btn--nobg {
+.heart__icon:hover .heart__icon--bg {
   opacity: 0;
+}
+.heart__icon:hover .heart__icon--nobg {
+  opacity: 1;
 }
 
 .header {
@@ -497,8 +513,10 @@ a:link, a:visited, a:hover, a:active {
 .card__btn {
   display: flex;
   justify-content: center;
-  height: 32px;
-  width: 32px;
+  width: 22px;
+  height: 21px;
   background-color: transparent;
   border: transparent 0px solid;
+  padding: 0;
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */
