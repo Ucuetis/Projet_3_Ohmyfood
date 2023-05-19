@@ -4,17 +4,36 @@
 .dishes__button {  
     @include gradient-button($width-dishes__button, $height-button);
 }
-.card__like {
-    display: none;
-    &:hover {
-        display: inline-block;
-        background-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-    }
-    &--noBg {
-        display: inline-block;
+
+/*-- Coeur --*/
+.card__btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+
+    &--nobg{
+        position: absolute;
         color: $color-denary;
-        &:hover {
-            display: none;
-        }
+    }
+
+    &--bg{
+        position: absolute;
+        opacity: 0;
+        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: all 400ms;
+    }
+
+    &:hover &--bg{
+        opacity: 1;
+
+    }
+    
+    &:hover &--nobg{
+        opacity: 0;
     }
 }

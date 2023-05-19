@@ -166,19 +166,32 @@ a:link, a:visited, a:hover, a:active {
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
-.card__like {
-  display: none;
+/*-- Coeur --*/
+.card__btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
 }
-.card__like:hover {
-  display: inline-block;
-  background-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-}
-.card__like--noBg {
-  display: inline-block;
+.card__btn--nobg {
+  position: absolute;
   color: #101010;
 }
-.card__like--noBg:hover {
-  display: none;
+.card__btn--bg {
+  position: absolute;
+  opacity: 0;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 400ms;
+}
+.card__btn:hover .card__btn--bg {
+  opacity: 1;
+}
+.card__btn:hover .card__btn--nobg {
+  opacity: 0;
 }
 
 .header {
