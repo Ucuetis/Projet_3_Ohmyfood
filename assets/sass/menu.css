@@ -499,13 +499,9 @@ img {
   transition-duration: 250ms;
 }
 .item__icon {
+  display: inline-block;
+  text-align: center;
   border-radius: 10px;
   background-color: #FFFFFF;
   margin-left: 15px;
-}
-
-.fa, .fa-brands, .fa-classic, .fa-regular, .fa-sharp, .fa-solid, .fab, .far, .fas {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }/*# sourceMappingURL=menu.css.map */
