@@ -54,7 +54,7 @@ img {
         padding: 16px 0;
     }
 
-    &__like {      
+    &__like {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -78,8 +78,6 @@ img {
     flex-wrap: nowrap;
     width: 100%;
     max-width: 634px;
-    align-items: center;
-    align-content: center;
     justify-content: center;
     align-self: center;
 
@@ -88,7 +86,7 @@ img {
         display: flex;
         align-self: flex-start;
         padding: 30px 0px 0px 0px;
-        
+
         &:after {
             position: absolute;
             display: flex;
@@ -104,7 +102,8 @@ img {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 20px 0px 0px 0px;
+        height: 100%;
+        margin: 20px 0px 0px 0px;
     }
     &__order {
         display: flex;
@@ -116,70 +115,76 @@ img {
 }
 
 .item {
-    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: auto;
     max-width: 604px;
     height: 69px;
     margin: 16px 0px;
-    padding: 15px;
     border-radius: 15px;
     background: $color-undenary;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    animation: ItemSpawn 250ms 150ms;
+    animation-timing-function: Ease-out;
+    animation-fill-mode: both;
+    transform: scale(0);
+    max-width: 100%;
+        &:hover &__check {
+            width: 59px;
+        }
 
     &__text {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        align-content: center;
         justify-content: flex-start;
-        gap: 12px;
-        width: calc(100% - 40px);
+        width: 100%;
+        padding: 15px 0 15px 15px;
         white-space: nowrap;
         overflow: hidden;
-        text-overflow: ellipsis;
-        &:hover {
-            overflow: visible;
-        }
     }
 
-    &__tilte {
-        padding-bottom: 16px;
-        font-weight: bold;
-        width: calc(100% - 40px);
+    &__title {
+        width: 100%;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        &:hover {
-            overflow: visible;
-        }
     }
 
     &__comment {
         padding-bottom: 0px;
-        width: calc(100% - 40px);
+        width: 100%;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        &:hover {
-            overflow: visible;
-        }
     }
 
     &__price {
-        position: absolute;
-        top: 50px;
-        right: 10px;
-        font-weight: 700;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: flex-end;
-        padding-left: 8px;
+        width: 59px;
+        height: 38px;
     }
+
     &__check {
-        position: absolute;
-        top: 30px;
-        right: 10px;
+        display: flex;
+        align-items: center;
+        width: 0;
+        height: 100%;
+        background-color: $color-tertiary;
+        border-radius: 0 15px 15px 0;
+        transition-duration: 250ms;
+    }
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius:  10px;
+        background-color: $color-undenary;
+        margin-left: 15px;
     }
 }

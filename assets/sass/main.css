@@ -1,3 +1,11 @@
+@keyframes ItemSpawn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /*-- Couleurs --*/
 /*-- breakpoints --*/
 /*-- largeur des boutons gradients pour la mixin --*/
@@ -48,7 +56,6 @@ a:link, a:visited, a:hover, a:active {
     line-height: 47px;
   }
 }
-
 .info__motto {
   font-weight: 300;
   font-size: 15px;
@@ -63,7 +70,6 @@ a:link, a:visited, a:hover, a:active {
   color: #FFFFFF;
 }
 
-.operating__title,
 .resort__title {
   font-weight: 700;
   font-size: 24px;
@@ -71,11 +77,18 @@ a:link, a:visited, a:hover, a:active {
   color: #000000;
 }
 
+.operating {
+  color: #000000;
+}
+.operating__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
 .operating__text {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  color: #000000;
 }
 
 .menu__name {
@@ -93,14 +106,12 @@ a:link, a:visited, a:hover, a:active {
   line-height: 16px;
   text-align: center;
 }
-
 .card__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
 }
-
 .card__subtitle {
   font-weight: 300;
   font-size: 17px;
@@ -109,24 +120,28 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .item__title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
 }
-
 .item__comment {
   font-weight: 300;
   font-size: 17px;
   line-height: 20px;
   color: #000000;
 }
+.item__price {
+  font-weight: 700;
+  height: 100%;
+}
+.item__icon {
+  width: 20px;
+  height: 20px;
+  color: #99E2D0;
+}
 
 .dishes__title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;

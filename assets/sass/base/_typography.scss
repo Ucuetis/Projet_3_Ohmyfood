@@ -34,24 +34,24 @@ a {
   line-height: 19px;
   color: $color-septenary;
 }
-
-.info__slogan {
+.info {
+  &__slogan {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: $color-nonary;
 
-  @media screen and (min-width: $desktop) {
-    font-size: 40px;
-    line-height: 47px;
+    @media screen and (min-width: $desktop) {
+      font-size: 40px;
+      line-height: 47px; 
+    }
   }
-}
-
-.info__motto {
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 18px;
-  color: $color-nonary;
+  &__motto {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: $color-nonary;
+  }
 }
 
 .button__text {
@@ -61,7 +61,6 @@ a {
   color: $color-undenary;
 }
 
-.operating__title,
 .resort__title {
   font-weight: 700;
   font-size: 24px;
@@ -69,13 +68,20 @@ a {
   color: $color-nonary;
 }
 
-.operating__text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+.operating {
   color: $color-nonary;
-}
 
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
 .menu__name {
   font-family: 'Shrikhand';
   font-style: italic;
@@ -84,47 +90,57 @@ a {
   line-height: 41px;
   color: $color-denary;
 }
+.card {
+  &__new {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+  }
 
-.card__new {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: $color-nonary;
+  }
+
+  &__subtitle {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+    color: $color-nonary;
+  }
 }
 
-.card__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-  color: $color-nonary;
-}
+.item {
+  &__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: $color-nonary;
+  }
 
-.card__subtitle {
-  font-weight: 300;
-  font-size: 17px;
-  line-height: 20px;
-  color: $color-nonary;
-}
+  &__comment {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+    color: $color-nonary;
+  }
 
-.item__title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
-  color: $color-nonary;
-}
+  &__price {
+    font-weight: 700;
+    height: 100%;
+  }
 
-.item__comment {
-  font-weight: 300;
-  font-size: 17px;
-  line-height: 20px;
-  color: $color-nonary;
+  &__icon {
+    width: 20px;
+    height: 20px;
+    color: $color-tertiary;
+  }
 }
 
 .dishes__title {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
