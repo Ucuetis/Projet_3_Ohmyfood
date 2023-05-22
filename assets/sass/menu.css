@@ -505,4 +505,8 @@ img {
   border-radius: 10px;
   background-color: #FFFFFF;
   margin-left: 15px;
+}
+
+.fas {
+  display: flex;
 }/*# sourceMappingURL=menu.css.map */
