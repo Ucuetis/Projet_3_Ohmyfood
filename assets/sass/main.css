@@ -15,8 +15,8 @@
 }
 .loader__spanContainer {
   display: flex;
-  width: 80 px;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 .loader__span--o1 {
   color: #9356DC;

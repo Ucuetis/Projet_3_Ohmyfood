@@ -10,8 +10,9 @@
         animation-iteration-count: 1;
         &Container {
           display: flex;
-          width: 80 px;
-          justify-content: space-between;
+          justify-content: center;
+          align-items: center;
+
         }
         &--o1 {
             color: $color-primary;
