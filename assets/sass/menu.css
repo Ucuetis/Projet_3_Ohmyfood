@@ -1,6 +1,67 @@
 /*-- Couleurs --*/
 /*-- breakpoints --*/
 /*-- largeur des boutons gradients pour la mixin --*/
+.loader {
+  background-color: #FFFFFF;
+  animation: blur 1600ms;
+  animation-delay: 5000ms;
+  animation-fill-mode: both;
+  z-index: 100;
+  opacity: 0.95;
+}
+.loader__span {
+  animation: blur 2500ms 100ms;
+  animation-iteration-count: 1;
+}
+.loader__spanContainer {
+  display: flex;
+  width: 80 px;
+  justify-content: space-between;
+}
+.loader__span--o1 {
+  color: #9356DC;
+}
+.loader__span--h {
+  color: #FF79DA;
+}
+.loader__span--m {
+  color: #99E2D0;
+}
+.loader__span--y {
+  color: #008766;
+}
+.loader__span--f {
+  color: #9356DC;
+}
+.loader__span--o2 {
+  color: #FF79DA;
+}
+.loader__span--o3 {
+  color: #99E2D0;
+}
+.loader__span--d {
+  color: #008766;
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(0px);
+  }
+  25% {
+    filter: blur(10px);
+  }
+  50% {
+    filter: blur(5px);
+  }
+  75% {
+    filter: blur(15px);
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 0;
+    z-index: -10;
+  }
+}
 .operating:hover .operating__icon--delay1 {
   animation: ringing 800ms 200ms ease-in-out;
 }
@@ -49,6 +110,14 @@ body, html {
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
   color: none;
+}
+
+.loader {
+  font-family: "Shrikhand";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 44px;
 }
 
 .header__logo {

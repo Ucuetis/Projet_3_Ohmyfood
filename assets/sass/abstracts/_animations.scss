@@ -1,3 +1,68 @@
+.loader {
+
+    background-color: $color-undenary;
+    animation: blur 1600ms;
+    animation-delay: 5000ms;
+    animation-fill-mode: both;
+    z-index: 100;
+    opacity: 0.95;
+    &__span {
+        animation: blur 2500ms 100ms;
+        animation-iteration-count: 1;
+        &Container {
+          display: flex;
+          width: 80 px;
+          justify-content: space-between;
+        }
+        &--o1 {
+            color: $color-primary;
+        }
+        &--h {
+            color: $color-secondary;
+        }
+        &--m {
+            color: $color-tertiary;
+        }
+        &--y {
+            color: $color-quaternary;
+        }
+        &--f {
+            color: $color-primary;
+        }
+        &--o2 {
+            color: $color-secondary;
+        }
+        &--o3 {
+            color: $color-tertiary;
+        }
+        &--d {
+            color: $color-quaternary;
+        }
+    }
+   }
+   
+@keyframes blur {
+    0% {
+        filter: blur(0px);
+    }
+    25% {
+        filter: blur(10px);
+    }
+    50% {
+        filter: blur(5px);
+    }
+    75% {
+        filter: blur(15px);
+    }
+    100% {
+        filter: blur(0px);
+        opacity: 0;
+        z-index: -10;
+    }
+}
+
+
+
 .operating {
     &:hover &__icon--delay1 {
         animation: ringing 800ms 200ms ease-in-out;
