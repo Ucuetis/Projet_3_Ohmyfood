@@ -1,3 +1,38 @@
+/*-- Couleurs --*/
+/*-- breakpoints --*/
+/*-- largeur des boutons gradients pour la mixin --*/
+.operating:hover .operating__icon--delay1 {
+  animation: ringing 800ms 200ms ease-in-out;
+}
+.operating:hover .operating__icon--delay2 {
+  animation: ringing 800ms 1200ms ease-in-out;
+}
+.operating:hover .operating__icon--delay3 {
+  animation: ringing 800ms 2200ms ease-in-out;
+}
+
+@keyframes ringing {
+  0% {
+    scale: 1;
+    color: #9356DC;
+    rotate: 0deg;
+  }
+  25% {
+    rotate: -10deg;
+  }
+  50% {
+    rotate: 10deg;
+    scale: 1.5;
+  }
+  75% {
+    rotate: -10deg;
+  }
+  100% {
+    scale: 1;
+    color: #7E7E7E;
+    rotate: 0deg;
+  }
+}
 @keyframes ItemSpawn {
   0% {
     transform: scale(0);
@@ -6,9 +41,6 @@
     transform: scale(1);
   }
 }
-/*-- Couleurs --*/
-/*-- breakpoints --*/
-/*-- largeur des boutons gradients pour la mixin --*/
 body, html {
   font-family: "Roboto";
   font-style: normal;
@@ -412,9 +444,6 @@ a:link, a:visited, a:hover, a:active {
 }
 .operating__icon {
   color: #7E7E7E;
-}
-.operating__icon:hover {
-  color: #9356DC;
 }
 
 .resort {

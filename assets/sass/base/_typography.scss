@@ -34,13 +34,13 @@ a {
   line-height: 19px;
   color: $color-septenary;
 }
+
 .info {
   &__slogan {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: $color-nonary;
-
     @media screen and (min-width: $desktop) {
       font-size: 40px;
       line-height: 47px; 
@@ -70,7 +70,6 @@ a {
 
 .operating {
   color: $color-nonary;
-
   &__title {
     font-weight: 700;
     font-size: 24px;
@@ -82,6 +81,7 @@ a {
     line-height: 19px;
   }
 }
+
 .menu__name {
   font-family: 'Shrikhand';
   font-style: italic;
@@ -90,6 +90,7 @@ a {
   line-height: 41px;
   color: $color-denary;
 }
+
 .card {
   &__new {
     font-weight: 500;
@@ -97,14 +98,12 @@ a {
     line-height: 16px;
     text-align: center;
   }
-
   &__title {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
     color: $color-nonary;
   }
-
   &__subtitle {
     font-weight: 300;
     font-size: 17px;
@@ -120,19 +119,16 @@ a {
     line-height: 21px;
     color: $color-nonary;
   }
-
   &__comment {
     font-weight: 300;
     font-size: 17px;
     line-height: 20px;
     color: $color-nonary;
   }
-
   &__price {
     font-weight: 700;
     height: 100%;
   }
-
   &__icon {
     width: 20px;
     height: 20px;

@@ -17,7 +17,6 @@
     display: flex;
     justify-content: center;
     cursor: pointer;
-
     &--nobg {
         position: absolute;
         color: $color-denary;
@@ -28,7 +27,6 @@
                 z-index: 1;
             }
     }
-
     &--bg {
         position: absolute;
         opacity: 0;

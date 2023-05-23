@@ -7,12 +7,10 @@
     padding: 16px 0px;
     margin: auto;
     background-color: $color-bg;
-
     &__slogan {
         text-align: center;
         margin-bottom: 18px;
     }
-    
     &__motto {
         text-align: center;
         padding: 0px 15px ;
@@ -31,7 +29,6 @@
     margin: auto;
     padding: 30px 0px 20px 0px;
     background-color: $color-undenary;
-
     &__box {
         display: flex;
         flex-direction: column;
@@ -40,24 +37,20 @@
         max-width: 1024px;
         gap: 16px;  
     }
-
     &__title {
         width: calc(100% - 30px);
         padding-left: 15px;
     }
-
     &__step {
         display: flex;
         flex-direction: column;
         max-width: 1012px;
         padding: 20px 0px 20px 12px;
         gap: 16px;
-
         @media screen and (min-width: $laptop) {
             flex-direction: row;
         }
     }
-
     &__stage {
         position: relative;
         display: flex;
@@ -69,14 +62,12 @@
         gap: 16px;
         padding-left: 26px;
         background-color: $color-bg-box;
-
         @media screen and (min-width: $desktop) {
             width: 322px;
             height: 72px;
             gap: 25px;
         }
     }
-
     &__num {
         position: absolute;
         left: -12px;
@@ -90,12 +81,8 @@
         background-color: $color-primary;
         text-align: center;
     }
-// animation 1 > 2 > 3 > 0 
     &__icon {
         color: $color-icon-grey;
-            &:hover {
-                color: $color-primary;
-        }
     }
 }
 
@@ -103,7 +90,6 @@
     width: 100%;
     max-width: 1440px;
     margin: auto;
-
     &__box {
         display: flex;
         flex-direction: column;
@@ -112,7 +98,6 @@
         align-items: center;
         background-color: $color-bg-box;
     }
-
     &__title {
         display: flex;
         align-items: center;
@@ -120,7 +105,6 @@
         max-width: 1024px;
         padding-left: 15px;
         margin: 30px 0px;
-
         @media screen and (min-width: $desktop) {
             padding-left: 45px;
          }
@@ -136,11 +120,9 @@
     padding: 0px 15px;
     margin-bottom: 30px;
     gap: 30px;
-
     @media screen and (min-width: $desktop) {
         max-width: 1440px;
     }
-
 }
 
 .card {
@@ -152,11 +134,9 @@
     width: 100%;
     max-width: 346px;
     min-width: 290px;
-
     @media screen and (min-width: $desktop) {
         max-width: 498px;
     }
-
     &__new {
         position: absolute;
         top: 10px;
@@ -170,7 +150,6 @@
         background-color: $color-tertiary;
         color: $color-quaternary;
     }
-
     &__img {
         width: 100%;
         height: 231px;
@@ -180,12 +159,10 @@
         border-radius: 15px 15px 0 0;
         box-shadow: none;
         object-fit: cover;
-
         @media screen and (min-width: $desktop) {
             max-width: 498px;
         }
     }
-
     &__bottom {
         height: 70px;
         display: flex;
@@ -194,20 +171,16 @@
         align-items: center;
         padding: 8px;
     }
-
     &__text {
         display: flex;
         flex-direction: column;
     }
-
     &__title {
         padding: 15px 0px;
     }
-
     &__subtitle {
         padding: 0px 0px 15px 0px;
     }
-
     &__btn {
         display: flex;
         justify-content: center;
