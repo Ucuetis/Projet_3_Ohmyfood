@@ -621,6 +621,7 @@ a:link, a:visited, a:hover, a:active {
   border-radius: 2px;
   background-color: #99E2D0;
   color: #008766;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 .card__img {
   width: 100%;
