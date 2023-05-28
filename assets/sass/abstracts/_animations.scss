@@ -108,6 +108,20 @@
     }
 }
 
+.item {
+    &__spawn {
+        &--delay1 {
+            animation: ItemSpawn 250ms 150ms;
+        }
+        &--delay2 {
+            animation: ItemSpawn 250ms 300ms;
+        }
+        &--delay3 { 
+            animation: ItemSpawn 250ms 450ms;
+        }
+    }
+}
+
 @keyframes ItemSpawn {
     0% {
         transform: scale(0)

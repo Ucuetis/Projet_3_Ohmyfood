@@ -105,6 +105,16 @@
     rotate: 0deg;
   }
 }
+.item__spawn--delay1 {
+  animation: ItemSpawn 250ms 150ms;
+}
+.item__spawn--delay2 {
+  animation: ItemSpawn 250ms 300ms;
+}
+.item__spawn--delay3 {
+  animation: ItemSpawn 250ms 450ms;
+}
+
 @keyframes ItemSpawn {
   0% {
     transform: scale(0);
@@ -562,7 +572,6 @@ img {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-  animation: ItemSpawn 250ms 150ms;
   animation-timing-function: Ease-out;
   animation-fill-mode: both;
   transform: scale(0);
@@ -610,10 +619,18 @@ img {
   border-radius: 0 15px 15px 0;
   transition-duration: 250ms;
 }
-.item__icon {
-  display: inline-block;
-  text-align: center;
+.item__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
   border-radius: 10px;
   background-color: #FFFFFF;
   margin-left: 15px;
+}
+.item__icon {
+  display: inline-block;
+  text-align: center;
+  padding-top: 4px;
 }/*# sourceMappingURL=menu.css.map */

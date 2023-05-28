@@ -122,7 +122,6 @@ img {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     cursor: pointer;
-    animation: ItemSpawn 250ms 150ms;
     animation-timing-function: Ease-out;
     animation-fill-mode: both;
     transform: scale(0);
@@ -169,11 +168,19 @@ img {
         border-radius: 0 15px 15px 0;
         transition-duration: 250ms;
     }
-    &__icon {
-        display: inline-block;
-        text-align: center;
+    &__center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
         border-radius:  10px;
         background-color: $color-undenary;
         margin-left: 15px;
+    }
+    &__icon {
+        display: inline-block;
+        text-align: center;
+        padding-top: 4px;
     }
 }

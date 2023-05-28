@@ -105,6 +105,16 @@
     rotate: 0deg;
   }
 }
+.item__spawn--delay1 {
+  animation: ItemSpawn 250ms 150ms;
+}
+.item__spawn--delay2 {
+  animation: ItemSpawn 250ms 300ms;
+}
+.item__spawn--delay3 {
+  animation: ItemSpawn 250ms 450ms;
+}
+
 @keyframes ItemSpawn {
   0% {
     transform: scale(0);
@@ -610,7 +620,7 @@ a:link, a:visited, a:hover, a:active {
 }
 .card__img {
   width: 100%;
-  height: 231px;
+  height: 174px;
   max-width: 346px;
   min-width: 290px;
   border: 0 solid transparent;
