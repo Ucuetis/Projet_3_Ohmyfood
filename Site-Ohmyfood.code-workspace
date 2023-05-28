@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Working-Directory",
+		"prettier.useEditorConfig": true,
+		"liveServer.settings.port": 5501
+	}
+}
