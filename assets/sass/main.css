@@ -9,7 +9,7 @@
   opacity: 1;
 }
 .loader__span {
-  animation: blur 3800ms 200ms;
+  animation: blur 2800ms 200ms;
   animation-fill-mode: both;
   animation-iteration-count: 1;
 }
